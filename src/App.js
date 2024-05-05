@@ -8,6 +8,8 @@ import {
   Header,
   Image,
   Icon,
+  Input,
+  Label,
 } from "semantic-ui-react";
 
 function App() {
@@ -83,10 +85,21 @@ function App() {
           </p>
         </Container>
       </Container>
+
+      {/* Spinner dan Google */}
       <Container textAlign="center">
         <Icon name="spinner" size="big" loading />
-        <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" size="tiny" href="https://google.com" target="_blank"/>
       </Container>
+      <Divider horizontal>Batas</Divider>
+
+      <Image
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        size="tiny"
+        href="https://google.com"
+        target="_blank"
+      />
+      <Input type="text" placeholder="search" icon={<Icon name="search" />} />
+      <Label pointing="left">Mesin Pencarian Google</Label>
     </div>
   );
 }
